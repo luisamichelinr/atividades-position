@@ -9,6 +9,27 @@
     top: 0;
     left: 0;
     padding: 20px;
+
+    animation-name: mover;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mover {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    50% {
+        top: 90vh;
+        padding: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
 }
 
 .div1 {
@@ -16,6 +37,25 @@
     height: 40px;
     width: 200px;
     margin: 0px auto;
+
+    animation-name: cor-azul;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cor-azul {
+    0% {
+        background-color: rgb(182, 250, 255);
+    }
+
+    50% {
+        background-color: darkblue
+    }
+
+    100% {
+        background-color: rgb(182, 250, 255);
+    }
 }
 
 .div2 {
@@ -26,4 +66,28 @@
     position: absolute;
     bottom: 0;
     right: 0;
+
+    animation-name: cor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes cor {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: orange;
+    }
+    50% {
+        background-color: yellow;
+    }
+    75% {
+        background-color: green;
+    }
+    100% {
+        background-color: blue;
+    }
 }

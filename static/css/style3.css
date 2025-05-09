@@ -24,6 +24,31 @@
     position: relative;
     height: 70vh;
     width: 20vw;
+
+    animation-name: cor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: alternate;
+}
+
+@keyframes cor {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: orange;
+    }
+    50% {
+        background-color: yellow;
+    }
+
+    75% {
+        background-color: green;
+    }
+    100% {
+        background-color: blue;
+    }
 }
 
 .div1-0 div {
@@ -37,11 +62,48 @@
 .div1-1 {
     background-color: rgb(7, 254, 7);
     top: 0px;
+
+    animation-name: aumentar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes aumentar {
+    0% {
+        height: 30px;
+        width: 10vw;
+    }
+
+    25% {
+        height: 40px;
+        width: 15vw;
+    }
+
+    50% {
+        height: 50px;
+        width: 20vw;
+    }
+
+    75% {
+        height: 40px;
+        width: 15vw;
+    }
+
+    100% {
+        height: 30px;
+        width: 10vw;
+    }
 }
 
 .div1-2 {
     background-color: black;
     bottom: 0px;
+
+    animation-name: aumentar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .div2-0 {
@@ -49,6 +111,33 @@
     width: 30vw;
     height: 12vh;
     position: relative;
+    animation-name: girar;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .div2-1 {
@@ -58,6 +147,27 @@
     position: absolute;
     bottom: 0;
     right: 0;
+
+    animation-name: mover;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mover {
+    0% {
+        bottom: 0;
+        right: 0;
+    }
+
+    50% {
+        bottom: 12vh;
+        right: 30vw;    }
+
+    100% {
+        bottom: 0;
+        right: 0;
+    }
 }
 
 .div3-0 {
@@ -67,6 +177,28 @@
     position: absolute;
     bottom: 0;
     right: 0;
+
+    animation-name: mover-lado;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mover-lado {
+    0% {
+        bottom: 0;
+        right: 0;
+    }
+
+    50% {
+        bottom: 0;
+        right: 20vw;
+    }
+
+    100% {
+        bottom: 0;
+        right: 0;
+    }
 }
 
 .div3-1 {
@@ -74,5 +206,24 @@
     width: 15vw;
     height: 10vh;
     position: relative;
-    top: 2vh
+    top: 2vh;
+
+    animation-name: subir;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes subir {
+    0% {
+        top: 2vh;
+    }
+
+    50% {
+        top: 10vh;
+    }
+
+    100% {
+        top: 2vh;
+    }
 }

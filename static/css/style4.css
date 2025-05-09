@@ -4,20 +4,258 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
-.div-branco {
-    background-color: white;
-    height: 90vh;
-    width: auto;
-    margin: 5vh;
-    padding: 100px;
+.borda-1 {
+    background-color: black;
+    width: 4vw;
+    height: 100vh;
+    position: absolute;
+    left: 6vw;
 }
+
+.borda-2 {
+    background-color: black;
+    width: 4vw;
+    height: 70vh;
+    position: absolute;
+    top: 30vh;
+    right: 6vw;
+}
+
+.borda-3 {
+    background-color: black;
+    width: 73vw;
+    height: 4vw;
+    position: absolute;
+    left: 27vw;
+    bottom: 5vh;
+}
+
+.borda-4 {
+    background-color: black;
+    width: 4vw;
+    height: 50vw;
+    position: absolute;
+    top: -40vh;
+    left: 20vw;
+    rotate: 70deg;
+}
+
 
 .div-vermelho {
     background-color: red;
     height: 50vh;
-    width: 50vw;
+    width: 40vw;
+    position: relative;
+    top: 25vh;
+    left: 28vw;
+    padding: 0 5vh;
+}
+
+.div-verde {
+    background-color: rgb(132, 255, 132);
+    height: 40vh;
+    width: auto;
+    position: relative;
+    top: 5vh;;
+}
+
+.div-azul {
+    background-color: rgb(0, 0, 255);
+    height: 10vh;
+    width: 10vh;
+    position: relative;
+    border-radius: 100%;
+    top: 15vh;
     margin: 0 auto;
+
+}
+
+.div-amarelo {
+    background-color: yellow;
+    height: 10vh;
+    width: 10vh;
+    position: absolute;
+    top: -5vh;
+    left: 20vw;
+    border-radius: 100%;
+
+    animation-name: girar-1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+}
+
+@keyframes girar-1 {
+    0% {
+        position: absolute;
+        top: -5vh;
+        left: 20vw;
+    }
+
+    25% {
+        position: absolute;
+        left: 40vw;
+        top: 20vh;
+    }
+
+    50% {
+        position: absolute;
+        top: 45vh;
+        left: 20vw;
+    }
+
+    75% {
+        position: absolute;
+        left: -5vh;
+        top: 20vh;
+    }
+    100% {
+        position: absolute;
+        top: -5vh;
+        left: 20vw;
+    }
+}
+
+.div-azul-claro {
+    background-color: rgb(2, 252, 252);
+    height: 10vh;
+    width: 10vh;
+    position: absolute;
+    left: 40vw;
+    top: 20vh;
+    border-radius: 100%;
+
+    animation-name: girar-2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes girar-2 {
+    0% {
+        position: absolute;
+        left: 40vw;
+        top: 20vh;
+    }
+
+    25% {
+        position: absolute;
+        top: 45vh;
+        left: 20vw;
+    }
+
+    50% {
+        position: absolute;
+        left: -5vh;
+        top: 20vh;
+    }
+
+    75% {
+        position: absolute;
+        top: -5vh;
+        left: 20vw;
+    }
+    100% {
+        position: absolute;
+        left: 40vw;
+        top: 20vh;
+    }
+}
+
+.div-preto {
+    background-color: rgb(0, 0, 0);
+    height: 10vh;
+    width: 10vh;
+    position: absolute;
+    top: 45vh;
+    left: 20vw;
+    border-radius: 100%;
+
+    animation-name: girar-3;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes girar-3 {
+    0% {
+        position: absolute;
+        top: 45vh;
+        left: 20vw;
+    }
+
+    25% {
+        position: absolute;
+        left: -5vh;
+        top: 20vh;
+    }
+
+    50% {
+        position: absolute;
+        top: -5vh;
+        left: 20vw;
+    }
+
+    75% {
+        position: absolute;
+        left: 40vw;
+        top: 20vh;
+    }
+    100% {
+        position: absolute;
+        top: 45vh;
+        left: 20vw;
+    }
+}
+
+.div-rosa {
+    background-color: rgb(255, 141, 208);
+    height: 10vh;
+    width: 10vh;
+    position: absolute;
+    left: -5vh;
+    top: 20vh;
+    border-radius: 100%;
+
+    animation-name: girar-4;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes girar-4 {
+    0% {
+        position: absolute;
+        left: -5vh;
+        top: 20vh;
+    }
+
+    25% {
+        position: absolute;
+        top: -5vh;
+        left: 20vw;
+    }
+
+    50% {
+        position: absolute;
+        left: 40vw;
+        top: 20vh;
+    }
+
+    75% {
+        position: absolute;
+        top: 45vh;
+        left: 20vw;
+    }
+    100% {
+        position: absolute;
+        left: -5vh;
+        top: 20vh;
+    }
+    
 }
